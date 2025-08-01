@@ -133,7 +133,416 @@ section {
 }
 
 
+/* Hero Text h1 styling*/
+.hero-text h1 {
+    font-size: var(--big-font);
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0 0 3px;
+}
 
-/* TODO: Media query for vertical stacking on small screens */
+/* Hero Text h3 styling */
+.hero-text h3 {
+    color: var(--text-color);
+    margin: 0 0 35px;
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+/* Hero Text paragraph styling */
+.hero-text p {
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+
+/* Button styling */
+.button {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 12px;
+    background: var(--main-color);
+    font-size: 1rex;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: var(--text-color);
+    border-radius: 5px;
+    transition: all 0.45s ease;
+}
+
+/* Button hover effect */
+.btn:hover {
+    transform: scale(0.9);
+}
+
+/* About Section Styling */
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.2rem;
+}
+
+/* About Image Styling */
+.about-img img {
+    max-width: 530px;
+    height: auto;
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* About Text Styling */
+.about-text h2{
+    font-size: var(--h2-font);
+    line-height: 1;
+
+}
+
+/* About Text h4 styling */
+.about-text h4 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.7;
+    color: var(--text-color);
+    margin-bottom: 15px 0 30px;
+}
+
+/* About Text paragraph styling */
+.about-text p {
+    font-size: var(--p-font);
+    color: var(--second-color);
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    margin-bottom: 4rex;
+}
+
+/* Resume Section Styling */
+.resume {
+    background: var(--second-bg-color);
+}
+
+/* Resume Content Styling */
+.main-txt {
+    text-align: center;
+}
+
+/* Resume Text h2 styling */
+.main-txt p {
+    color: var(--second-color);
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+/* Resume Text h2 styling */
+.main-txt h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+/* Resume Content Grid Styling */
+.resume-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Resume Box Styling */
+.box {
+    background: var(--bg-color);
+    padding: 35px 45px;
+    border-radius: 8px;
+    transition: all 0.45s ease;
+    width: 100%;
+}
+
+/* Resume Box h3 styling */
+.box h3 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+/* Resume Box paragraph styling */
+.box p {
+    
+    color: var(--second-color);
+    font-size: 1 rem;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Resume Box hover effect */
+.box:hover {
+    transform: translateY(-8px);
+    cursor: pointer;
+}
+
+/* Projects Section Styling */
+.projects-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 5rem ;
+}
+
+/* Project Row Styling */
+.row {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Project Image Styling */
+.row img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.5s;
+    object-fit: cover;
+    filter: brightness(0.9) contrast(1.1);
+}
+
+/* Layer Styling */
+.layer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #a0aaff);
+    position: absolute;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+    text-align: center;
+    justify-content: flex-start;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* Layer h3 Styling */
+.layer h3 {
+    font: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Layer paragraph Styling */
+.layer p {
+    font-size: 1rem;
+    color: var(--second-color);
+    line-height: 1.8;
+}
+
+/* Layer Icon Styling */
+.layer i{
+    color: var (--main-color);
+    margin-top: 20px;
+    font-size: 28px;
+    background: var(--text-color);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+
+/* Layer hover effect */
+.row:hover img {
+    transform: scale(1.1);
+}
+
+/* Layer hover effect */
+.row:hover .layer {
+    height: 100%;
+}
+
+/* Contact Section Styling */
+.contact{
+    background: var(--second-bg-color);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    align-items: center;
+}
+
+/* Contact Text Styling */
+.contact-text h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 18px 0;
+}
+
+/* Contact Text h2 styling */
+.contact-text h2 {
+    font-size: var(--h2-font);
+    line-height: 1;
+}
+
+/* Contact Text paragraph styling */
+.contact-text p {
+    font-size: var(--p-font);
+    color: var(--second-color);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+/* Contact Icons Styling */
+.list {
+    margin-bottom: 2.8rem;
+}
+
+/* Contact Icons List Styling */
+.list li {
+    margin-bottom: 12px;
+}
+
+/* Contact Icons List Links Styling */
+.list li a {
+    display: block;
+    color: var(--second-color);
+    font-size: 14px;
+    transition: all 0.45s ease;
+}
+
+/* Contact Icons List Links hover effect */
+.list li a:hover {
+    color: var(--text-color);
+    transform: translateX(5px);
+}
+
+/* Contact Icons i Styling */
+.contact-icons i {
+    height: 45px;
+    width: 45px;
+    background: var(--main-color);
+    color: black;
+    font-size: 30px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all 0.41s ease;
+}
+
+/* Contact Icons i hover effect */
+.contact-icons i:hover {
+    color: white;
+}
+
+/* Contact Form Styling */
+.contact-form form {
+    position: relative;
+}
+
+/* Contact Form form input and textarea Styling */
+.contact-form form input, form textarea {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 15px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+/* Contact Form form input Styling */
+.contact-form textarea {
+    height: 240px;
+    resize: none;
+}
+
+/* Contact Form submit button Styling */
+.contact-form .submit{
+    display: inline-block;
+    font-size: 16px;
+    background: var(--main-color);
+    color: var(--text-color);
+    width: 160px;
+    transition: all 0.41s ease;
+}
+
+/* Contact Form submit button hover effect */
+.contact-form .submit:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: var(--bg-color);
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1480px) {
+
+/* Header Navigation styling for smaller screens */
+    header {
+        padding: 12px 2.5%;
+        transition: 0.1s;
+    }
+
+/* Header Navigation styling for smaller screens */
+    section{
+        padding: 110px 3% 60px;
+    }
+
+/* Hero Section height adjustment */
+    .end{
+    padding: 11px 3%;
+  }
+
+}
+
+
+/* Media query for vertical stacking on small screens */
+@media (max-width: 900px) {
+/* Header Navigation styling for smaller screens */
+    .about {
+        grid-template-columns: 1fr;
+    }
+
+/* About Image Styling */
+    .about-img img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+    }
+
+/* Resume Content Grid Styling */
+    .contact {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+
+
 /* TODO: Dark theme styles */
 /* TODO: Highlight class for list items */
