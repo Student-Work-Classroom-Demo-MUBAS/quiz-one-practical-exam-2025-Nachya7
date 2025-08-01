@@ -7,14 +7,14 @@
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
-    font-family: 'Poppins', sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Root Variables for Colors and Fonts to help with consistency */
 :root {
-    --bg-color: #2a2a2a;
+    --bg-color: white;
     --second-bg-color: #202020;
-    --text-color: #fff;
+    --text-color: black;
     --second-color: #ccc;
     --main-color: #edd899;
     --big-font: 5rem;
@@ -22,6 +22,12 @@
     --p-font: 1.1rem;
 }
 
+/* Body Styling */
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
 
 /* Style navigation bar with Flexbox */
 
