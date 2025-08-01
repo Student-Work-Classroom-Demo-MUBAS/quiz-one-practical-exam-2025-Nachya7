@@ -225,96 +225,6 @@ section {
     margin-bottom: 4rex;
 }
 
-/* Resume Section Styling */
-.resume {
-    background: var(--second-bg-color);
-}
-
-/* Resume Content Styling */
-.main-txt {
-    text-align: center;
-}
-
-/* Resume Text h2 styling */
-.main-txt p {
-    color: var(--second-color);
-    font-size: 15px;
-    margin-bottom: 15px;
-}
-
-/* Resume Text h2 styling */
-.main-txt h2 {
-    font-size: var(--h2-font);
-    line-height: 1;
-}
-
-/* Resume Content Grid Styling */
-.resume-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-}
-
-/* Resume Box Styling */
-.box {
-    background: var(--bg-color);
-    padding: 35px 45px;
-    border-radius: 8px;
-    transition: all 0.45s ease;
-    width: 100%;
-}
-
-/* Resume Box h3 styling */
-.box h3 {
-    font-size: 24px;
-    font-weight: 600;
-    color: var(--text-color);
-    margin-bottom: 15px;
-}
-/* Resume Box paragraph styling */
-.box p {
-    
-    color: var(--second-color);
-    font-size: 1 rem;
-    line-height: 1.8;
-    margin-bottom: 25px;
-}
-
-/* Resume Box hover effect */
-.box:hover {
-    transform: translateY(-8px);
-    cursor: pointer;
-}
-
-/* Projects Section Styling */
-.projects-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    align-items: center;
-    gap: 2.5rem;
-    margin-top: 5rem ;
-}
-
-/* Project Row Styling */
-.row {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-}
-
-/* Project Image Styling */
-.row img {
-    width: 100%;
-    height: 250px;
-    border-radius: 8px;
-    display: block;
-    transition: transform 0.5s;
-    object-fit: cover;
-    filter: brightness(0.9) contrast(1.1);
-}
-
 /* Layer Styling */
 .layer {
     position: absolute;
@@ -487,15 +397,6 @@ section {
 .contact-form .submit:hover {
     transform: scale(1.1);
     cursor: pointer;
-}
-
-/* Footer Styling */
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: var(--bg-color);
-  color: white;
-  margin-top: 2rem;
 }
 
 /* Responsive Design */
